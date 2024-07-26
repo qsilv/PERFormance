@@ -46,12 +46,7 @@ void testSort(void(*sortFunc)(std::vector<int>&, int, int), const string& sortNa
     }
 }
 
-// Wrapper function for Heapsort to match the signature expected by testSort
-void heapsortWrapper(std::vector<int>& arr, int low, int high) {
-    (void) low;  // Unused parameter
-    (void) high; // Unused parameter
-    heapsort(arr);
-}
+
 
 int main() {
     testSort(quicksort, "Quicksort");

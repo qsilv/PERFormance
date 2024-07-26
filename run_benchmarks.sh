@@ -8,7 +8,7 @@ g++ -O3 benchmark.cpp data_generator.cpp quicksort.cpp heapsort.cpp mergesort.cp
 # Function to run benchmarks with perf
 run_perf() {
     echo "Running with $1 optimization:"
-    sudo perf stat -e branch-misses,cache-misses -x, -o perf_output_$1.txt ./benchmark_$1
+    perf stat -e branch-misses,cache-misses -x, -o perf_output_$1.txt ./benchmark_$1
     echo "Perf output saved to perf_output_$1.txt"
 }
 

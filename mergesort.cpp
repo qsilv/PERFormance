@@ -49,12 +49,3 @@ void mergesort(std::vector<int>& arr, int left, int right) {
     }
 }
 
-int main() {
-    std::vector<int> arr = {38, 27, 43, 3, 9, 82, 10};
-    mergesort(arr, 0, arr.size() - 1);
-    for (int num : arr) {
-        std::cout << num << " ";
-    }
-    std::cout << std::endl;
-    return 0;
-}

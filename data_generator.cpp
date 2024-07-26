@@ -40,23 +40,3 @@ void printArray(const std::vector<int>& arr) {
     std::cout << std::endl;
 }
 
-int main() {
-    int size = 20;  // Example size
-
-    // Generate random array
-    std::vector<int> randomArray = generateRandomArray(size);
-    std::cout << "Random Array: ";
-    printArray(randomArray);
-
-    // Generate sorted array
-    std::vector<int> sortedArray = generateSortedArray(size);
-    std::cout << "Sorted Array: ";
-    printArray(sortedArray);
-
-    // Generate reverse-sorted array
-    std::vector<int> reverseSortedArray = generateReverseSortedArray(size);
-    std::cout << "Reverse Sorted Array: ";
-    printArray(reverseSortedArray);
-
-    return 0;
-}
