@@ -17,7 +17,7 @@ run_benchmarks() {
     ./benchmark_$optimization_level $sort_name $optimization_level $output_file
 
     # Use perf to gather statistics and append to the output file
-    sudo perf stat -e branch-misses,cache-misses -x, -o temp_perf_output.txt ./benchmark_$optimization_level $sort_name $optimization_level $output_file
+    perf stat -e branch-misses,cache-misses -x, -o temp_perf_output.txt ./benchmark_$optimization_level $sort_name $optimization_level $output_file
     echo "Perf output for $sort_name with $optimization_level optimization:" >> $output_file
     cat temp_perf_output.txt >> $output_file
     echo "" >> $output_file
