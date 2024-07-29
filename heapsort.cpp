@@ -1,8 +1,6 @@
 #include "heapsort.h"
 #include <algorithm>
 
-using namespace std;
-
 void heapify(std::vector<int>& arr, int n, int i) {
     int largest = i;
     int left = 2 * i + 1;
@@ -29,11 +27,4 @@ void heapsort(std::vector<int>& arr) {
         std::swap(arr[0], arr[i]);
         heapify(arr, i, 0);
     }
-}
-
-// Wrapper function to match the signature expected by benchmarkSort
-void heapsortWrapper(std::vector<int>& arr, int low, int high) {
-    (void) low;  // Unused parameter
-    (void) high; // Unused parameter
-    heapsort(arr);
 }

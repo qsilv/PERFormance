@@ -1,5 +1,4 @@
-#include <iostream>
-#include <vector>
+#include "mergesort.h"
 
 void merge(std::vector<int>& arr, int left, int mid, int right) {
     int n1 = mid - left + 1;
@@ -48,4 +47,3 @@ void mergesort(std::vector<int>& arr, int left, int right) {
         merge(arr, left, mid, right);
     }
 }
-

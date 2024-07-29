@@ -1,6 +1,5 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>  // For std::swap
+#include "quicksort.h"
+#include <algorithm>
 
 int partition(std::vector<int>& arr, int low, int high) {
     int pivot = arr[high];
@@ -22,6 +21,3 @@ void quicksort(std::vector<int>& arr, int low, int high) {
         quicksort(arr, pi + 1, high);
     }
 }
-
-
-    
