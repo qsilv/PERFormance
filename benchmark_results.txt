@@ -2,965 +2,1325 @@ Benchmarking Results
 ====================
 Benchmarking with -O0 optimization
 Array Size: 10000, Algorithm: MergeSort
+Merge Sort: 0.00225557 seconds - Sorted successfully
+Total runtime: 0.00359706 seconds
 
  Performance counter stats for './sorting_benchmark_O0 10000 MergeSort':
 
-            27,528      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-            89,390      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            80,679      cpu_core/L1-dcache-load-misses/  #    0.00% of all L1-dcache accesses   (98.13%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+     2,461,115,499      cpu_core/L1-dcache-loads/                                               (98.13%)
+     1,259,582,820      cpu_atom/L1-dcache-loads/                                               (1.87%)
+             3,331      cpu_core/LLC-load-misses/        #   27.32% of all L1-icache accesses   (98.13%)
+                 0      cpu_atom/LLC-load-misses/                                               (1.87%)
+            12,191      cpu_core/LLC-loads/                                                     (98.13%)
+             8,522      cpu_atom/LLC-loads/                                                     (1.87%)
 
-       0.008519882 seconds time elapsed
+       0.215818272 seconds time elapsed
 
-       0.003678000 seconds user
+       0.214182000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 10000, Algorithm: HeapSort
+Heap Sort: 0.00239525 seconds - Sorted successfully
+Total runtime: 0.00411581 seconds
 
  Performance counter stats for './sorting_benchmark_O0 10000 HeapSort':
 
-            20,773      cpu_core/cache-misses/                                                  (98.87%)
-             2,913      cpu_atom/cache-misses/                                                  (1.13%)
-            94,075      cpu_core/branch-misses/                                                 (98.87%)
-            53,323      cpu_atom/branch-misses/                                                 (1.13%)
+            84,197      cpu_core/L1-dcache-load-misses/  #    0.00% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+     2,435,795,304      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             4,328      cpu_core/LLC-load-misses/        #   32.97% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            13,127      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.004396337 seconds time elapsed
+       0.209854887 seconds time elapsed
 
-       0.003051000 seconds user
+       0.207741000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 10000, Algorithm: QuickSort
+Quick Sort: 0.000987301 seconds - Sorted successfully
+Total runtime: 0.00349034 seconds
 
  Performance counter stats for './sorting_benchmark_O0 10000 QuickSort':
 
-            15,258      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-            73,323      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            93,624      cpu_core/L1-dcache-load-misses/  #    0.00% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+     2,430,735,358      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             3,162      cpu_core/LLC-load-misses/        #   26.69% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            11,845      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.006375484 seconds time elapsed
+       0.212165840 seconds time elapsed
 
-       0.002034000 seconds user
+       0.210203000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 50000, Algorithm: MergeSort
+Merge Sort: 0.0118648 seconds - Sorted successfully
+Total runtime: 0.0140604 seconds
 
  Performance counter stats for './sorting_benchmark_O0 50000 MergeSort':
 
-            26,221      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           415,673      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           103,152      cpu_core/L1-dcache-load-misses/  #    0.00% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+     2,500,804,202      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             3,085      cpu_core/LLC-load-misses/        #   23.98% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            12,867      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.022166378 seconds time elapsed
+       0.222568078 seconds time elapsed
 
-       0.014664000 seconds user
+       0.219728000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 50000, Algorithm: HeapSort
+Heap Sort: 0.0108329 seconds - Sorted successfully
+Total runtime: 0.01297 seconds
 
  Performance counter stats for './sorting_benchmark_O0 50000 HeapSort':
 
-            18,305      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           438,780      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           203,581      cpu_core/L1-dcache-load-misses/  #    0.01% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+     2,489,296,734      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             3,460      cpu_core/LLC-load-misses/        #   29.63% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            11,676      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.013231655 seconds time elapsed
+       0.223538009 seconds time elapsed
 
-       0.011818000 seconds user
-       0.000000000 seconds sys
+       0.217596000 seconds user
+       0.003956000 seconds sys
 
 
 
 Array Size: 50000, Algorithm: QuickSort
+Quick Sort: 0.00537161 seconds - Sorted successfully
+Total runtime: 0.00736607 seconds
 
  Performance counter stats for './sorting_benchmark_O0 50000 QuickSort':
 
-            20,018      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           342,885      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            96,841      cpu_core/L1-dcache-load-misses/  #    0.00% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+     2,459,191,633      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             3,646      cpu_core/LLC-load-misses/        #   27.16% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            13,423      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.008799016 seconds time elapsed
+       0.213042178 seconds time elapsed
 
-       0.007239000 seconds user
+       0.211463000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 100000, Algorithm: MergeSort
+Merge Sort: 0.0252062 seconds - Sorted successfully
+Total runtime: 0.0278422 seconds
 
  Performance counter stats for './sorting_benchmark_O0 100000 MergeSort':
 
-            34,351      cpu_core/cache-misses/                                                  (99.97%)
-           652,921      cpu_atom/cache-misses/                                                  (0.03%)
-           864,119      cpu_core/branch-misses/                                                 (99.97%)
-           256,504      cpu_atom/branch-misses/                                                 (0.03%)
+           113,373      cpu_core/L1-dcache-load-misses/  #    0.00% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+     2,582,573,658      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             4,114      cpu_core/LLC-load-misses/        #   29.99% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            13,719      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.032196147 seconds time elapsed
+       0.234963941 seconds time elapsed
 
-       0.029835000 seconds user
-       0.000000000 seconds sys
+       0.229435000 seconds user
+       0.004025000 seconds sys
 
 
 
 Array Size: 100000, Algorithm: HeapSort
+Heap Sort: 0.022381 seconds - Sorted successfully
+Total runtime: 0.0246442 seconds
 
  Performance counter stats for './sorting_benchmark_O0 100000 HeapSort':
 
-            34,598      cpu_core/cache-misses/                                                  (73.70%)
-               326      cpu_atom/cache-misses/                                                  (26.30%)
-           995,636      cpu_core/branch-misses/                                                 (73.70%)
-           732,076      cpu_atom/branch-misses/                                                 (26.30%)
+           452,190      cpu_core/L1-dcache-load-misses/  #    0.02% of all L1-dcache accesses   (100.00%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+     2,562,184,262      cpu_core/L1-dcache-loads/                                               (100.00%)
+        21,311,941      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             3,259      cpu_core/LLC-load-misses/        #   23.08% of all L1-icache accesses   (100.00%)
+                 0      cpu_atom/LLC-load-misses/                                               (0.00%)
+            14,119      cpu_core/LLC-loads/                                                     (100.00%)
+         1,517,038      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.029671063 seconds time elapsed
+       0.236464726 seconds time elapsed
 
-       0.027816000 seconds user
+       0.233137000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 100000, Algorithm: QuickSort
+Quick Sort: 0.0113887 seconds - Sorted successfully
+Total runtime: 0.0137262 seconds
 
  Performance counter stats for './sorting_benchmark_O0 100000 QuickSort':
 
-            25,415      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           691,533      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           116,978      cpu_core/L1-dcache-load-misses/  #    0.00% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+     2,495,779,981      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             3,712      cpu_core/LLC-load-misses/        #   31.02% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            11,968      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.018253423 seconds time elapsed
+       0.226669374 seconds time elapsed
 
-       0.015065000 seconds user
-       0.000000000 seconds sys
+       0.220951000 seconds user
+       0.003945000 seconds sys
 
 
 
 Array Size: 500000, Algorithm: MergeSort
+Merge Sort: 0.137746 seconds - Sorted successfully
+Total runtime: 0.143572 seconds
 
  Performance counter stats for './sorting_benchmark_O0 500000 MergeSort':
 
-           117,446      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-         4,925,735      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           166,855      cpu_core/L1-dcache-load-misses/  #    0.01% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+     3,278,801,181      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             5,233      cpu_core/LLC-load-misses/        #   25.71% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            20,354      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.153856849 seconds time elapsed
+       0.350438774 seconds time elapsed
 
-       0.143509000 seconds user
-       0.007972000 seconds sys
+       0.348853000 seconds user
+       0.000000000 seconds sys
 
 
 
 Array Size: 500000, Algorithm: HeapSort
+Heap Sort: 0.131694 seconds - Sorted successfully
+Total runtime: 0.135165 seconds
 
  Performance counter stats for './sorting_benchmark_O0 500000 HeapSort':
 
-            66,900      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-         5,358,313      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+         3,536,488      cpu_core/L1-dcache-load-misses/  #    0.11% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+     3,206,955,447      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             7,989      cpu_core/LLC-load-misses/        #   16.20% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            49,327      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.138514584 seconds time elapsed
+       0.348150919 seconds time elapsed
 
-       0.136478000 seconds user
+       0.346147000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 500000, Algorithm: QuickSort
+Quick Sort: 0.0648481 seconds - Sorted successfully
+Total runtime: 0.0687398 seconds
 
  Performance counter stats for './sorting_benchmark_O0 500000 QuickSort':
 
-            73,735      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-         3,843,472      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           314,926      cpu_core/L1-dcache-load-misses/  #    0.01% of all L1-dcache accesses   (89.35%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+     2,936,913,112      cpu_core/L1-dcache-loads/                                               (89.35%)
+     1,766,927,586      cpu_atom/L1-dcache-loads/                                               (10.65%)
+             4,960      cpu_core/LLC-load-misses/        #   24.81% of all L1-icache accesses   (89.35%)
+                 0      cpu_atom/LLC-load-misses/                                               (10.65%)
+            19,991      cpu_core/LLC-loads/                                                     (89.35%)
+             3,934      cpu_atom/LLC-loads/                                                     (10.65%)
 
-       0.075635528 seconds time elapsed
+       0.301541986 seconds time elapsed
 
-       0.073983000 seconds user
-       0.000000000 seconds sys
+       0.296267000 seconds user
+       0.004003000 seconds sys
 
 
 
 Array Size: 1000000, Algorithm: MergeSort
+Merge Sort: 0.279048 seconds - Sorted successfully
+Total runtime: 0.284063 seconds
 
  Performance counter stats for './sorting_benchmark_O0 1000000 MergeSort':
 
-           316,110      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-        10,253,809      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           556,168      cpu_core/L1-dcache-load-misses/  #    0.01% of all L1-dcache accesses   (94.92%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+     4,251,536,495      cpu_core/L1-dcache-loads/                                               (94.92%)
+     3,038,573,205      cpu_atom/L1-dcache-loads/                                               (5.08%)
+            10,342      cpu_core/LLC-load-misses/        #   25.38% of all L1-icache accesses   (94.92%)
+                 0      cpu_atom/LLC-load-misses/                                               (5.08%)
+            40,741      cpu_core/LLC-loads/                                                     (94.92%)
+            16,341      cpu_atom/LLC-loads/                                                     (5.08%)
 
-       0.318252239 seconds time elapsed
+       0.527398465 seconds time elapsed
 
-       0.316652000 seconds user
-       0.000000000 seconds sys
+       0.516564000 seconds user
+       0.007947000 seconds sys
 
 
 
 Array Size: 1000000, Algorithm: HeapSort
+Heap Sort: 0.270762 seconds - Sorted successfully
+Total runtime: 0.274632 seconds
 
  Performance counter stats for './sorting_benchmark_O0 1000000 HeapSort':
 
-           131,804      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-        13,970,566      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+         8,422,149      cpu_core/L1-dcache-load-misses/  #    0.21% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+     4,072,551,891      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+            17,140      cpu_core/LLC-load-misses/        #    2.84% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+           602,956      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.317375506 seconds time elapsed
+       0.503966590 seconds time elapsed
 
-       0.314299000 seconds user
+       0.502130000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 1000000, Algorithm: QuickSort
+Quick Sort: 0.135464 seconds - Sorted successfully
+Total runtime: 0.138959 seconds
 
  Performance counter stats for './sorting_benchmark_O0 1000000 QuickSort':
 
-           151,082      cpu_core/cache-misses/                                                  (96.73%)
-           220,458      cpu_atom/cache-misses/                                                  (3.27%)
-         7,953,117      cpu_core/branch-misses/                                                 (96.73%)
-         3,496,360      cpu_atom/branch-misses/                                                 (3.27%)
+           576,471      cpu_core/L1-dcache-load-misses/  #    0.02% of all L1-dcache accesses   (99.96%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+     3,287,456,932      cpu_core/L1-dcache-loads/                                               (99.96%)
+     1,915,393,819      cpu_atom/L1-dcache-loads/                                               (0.04%)
+             7,590      cpu_core/LLC-load-misses/        #   35.10% of all L1-icache accesses   (99.96%)
+                 0      cpu_atom/LLC-load-misses/                                               (0.04%)
+            21,625      cpu_core/LLC-loads/                                                     (99.96%)
+           158,297      cpu_atom/LLC-loads/                                                     (0.04%)
 
-       0.157499422 seconds time elapsed
+       0.372368213 seconds time elapsed
 
-       0.151830000 seconds user
-       0.003995000 seconds sys
+       0.365719000 seconds user
+       0.004018000 seconds sys
 
 
 
 Benchmarking with -O1 optimization
 Array Size: 10000, Algorithm: MergeSort
+Merge Sort: 0.000633792 seconds - Sorted successfully
+Total runtime: 0.00318064 seconds
 
  Performance counter stats for './sorting_benchmark_O1 10000 MergeSort':
 
-            18,245      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-            86,884      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            49,266      cpu_core/L1-dcache-load-misses/  #    0.03% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       156,060,366      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             2,915      cpu_core/LLC-load-misses/        #   48.17% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             6,051      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.002938913 seconds time elapsed
+       0.024909396 seconds time elapsed
 
-       0.001749000 seconds user
+       0.023003000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 10000, Algorithm: HeapSort
+Heap Sort: 0.000303823 seconds - Sorted successfully
+Total runtime: 0.00384788 seconds
 
  Performance counter stats for './sorting_benchmark_O1 10000 HeapSort':
 
-            14,723      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-            30,240      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            51,599      cpu_core/L1-dcache-load-misses/  #    0.03% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       155,528,147      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,174      cpu_core/LLC-load-misses/        #   20.04% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             5,858      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.002421423 seconds time elapsed
+       0.024920377 seconds time elapsed
 
-       0.001161000 seconds user
-       0.000000000 seconds sys
+       0.019474000 seconds user
+       0.003894000 seconds sys
 
 
 
 Array Size: 10000, Algorithm: QuickSort
+Quick Sort: 0.000388475 seconds - Sorted successfully
+Total runtime: 0.00247364 seconds
 
  Performance counter stats for './sorting_benchmark_O1 10000 QuickSort':
 
-            12,016      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-            75,201      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            39,696      cpu_core/L1-dcache-load-misses/  #    0.03% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       154,897,968      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,624      cpu_core/LLC-load-misses/        #   33.55% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             4,841      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.003398800 seconds time elapsed
+       0.026453669 seconds time elapsed
 
-       0.001341000 seconds user
+       0.023164000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 50000, Algorithm: MergeSort
+Merge Sort: 0.00354487 seconds - Sorted successfully
+Total runtime: 0.00485396 seconds
 
  Performance counter stats for './sorting_benchmark_O1 50000 MergeSort':
 
-            24,830      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           405,613      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            78,802      cpu_core/L1-dcache-load-misses/  #    0.05% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       163,868,765      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,366      cpu_core/LLC-load-misses/        #   21.63% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             6,316      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.010548944 seconds time elapsed
+       0.027511652 seconds time elapsed
 
-       0.005195000 seconds user
+       0.026068000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 50000, Algorithm: HeapSort
+Heap Sort: 0.00189314 seconds - Sorted successfully
+Total runtime: 0.00371896 seconds
 
  Performance counter stats for './sorting_benchmark_O1 50000 HeapSort':
 
-            17,721      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-            79,030      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           160,583      cpu_core/L1-dcache-load-misses/  #    0.10% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       161,793,711      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             2,049      cpu_core/LLC-load-misses/        #   33.92% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             6,041      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.006138260 seconds time elapsed
+       0.026768352 seconds time elapsed
 
-       0.003275000 seconds user
-       0.000000000 seconds sys
+       0.021752000 seconds user
+       0.003625000 seconds sys
 
 
 
 Array Size: 50000, Algorithm: QuickSort
+Quick Sort: 0.00207415 seconds - Sorted successfully
+Total runtime: 0.00794951 seconds
 
  Performance counter stats for './sorting_benchmark_O1 50000 QuickSort':
 
-            15,951      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           338,077      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            51,245      cpu_core/L1-dcache-load-misses/  #    0.03% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       158,029,030      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,991      cpu_core/LLC-load-misses/        #   36.65% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             5,432      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.005525222 seconds time elapsed
+       0.026257896 seconds time elapsed
 
-       0.003447000 seconds user
+       0.024873000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 100000, Algorithm: MergeSort
+Merge Sort: 0.0074771 seconds - Sorted successfully
+Total runtime: 0.0090162 seconds
 
  Performance counter stats for './sorting_benchmark_O1 100000 MergeSort':
 
-            28,489      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           841,952      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            67,636      cpu_core/L1-dcache-load-misses/  #    0.04% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       173,980,046      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,606      cpu_core/LLC-load-misses/        #   18.02% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             8,912      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.016985164 seconds time elapsed
+       0.033084243 seconds time elapsed
 
-       0.009386000 seconds user
+       0.030946000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 100000, Algorithm: HeapSort
+Heap Sort: 0.00456836 seconds - Sorted successfully
+Total runtime: 0.00627163 seconds
 
  Performance counter stats for './sorting_benchmark_O1 100000 HeapSort':
 
-            18,153      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           139,261      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           357,351      cpu_core/L1-dcache-load-misses/  #    0.21% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       170,222,035      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,570      cpu_core/LLC-load-misses/        #   30.41% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             5,162      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.007808529 seconds time elapsed
+       0.028991799 seconds time elapsed
 
-       0.006327000 seconds user
+       0.027460000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 100000, Algorithm: QuickSort
+Quick Sort: 0.00469548 seconds - Sorted successfully
+Total runtime: 0.00863294 seconds
 
  Performance counter stats for './sorting_benchmark_O1 100000 QuickSort':
 
-            17,796      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           682,333      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            53,756      cpu_core/L1-dcache-load-misses/  #    0.03% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       162,106,914      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,570      cpu_core/LLC-load-misses/        #   25.31% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             6,204      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.008813284 seconds time elapsed
+       0.030083902 seconds time elapsed
 
-       0.004301000 seconds user
-       0.002150000 seconds sys
+       0.028489000 seconds user
+       0.000000000 seconds sys
 
 
 
 Array Size: 500000, Algorithm: MergeSort
+Merge Sort: 0.0412169 seconds - Sorted successfully
+Total runtime: 0.0429797 seconds
 
  Performance counter stats for './sorting_benchmark_O1 500000 MergeSort':
 
-           135,416      cpu_core/cache-misses/                                                  (95.27%)
-            62,022      cpu_atom/cache-misses/                                                  (4.73%)
-         4,792,007      cpu_core/branch-misses/                                                 (95.27%)
-         4,103,493      cpu_atom/branch-misses/                                                 (4.73%)
+           227,895      cpu_core/L1-dcache-load-misses/  #    0.09% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       257,962,513      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             8,458      cpu_core/LLC-load-misses/        #   42.16% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            20,064      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.054037621 seconds time elapsed
+       0.072690949 seconds time elapsed
 
-       0.045560000 seconds user
-       0.004141000 seconds sys
+       0.070844000 seconds user
+       0.000000000 seconds sys
 
 
 
 Array Size: 500000, Algorithm: HeapSort
+Heap Sort: 0.0289202 seconds - Sorted successfully
+Total runtime: 0.0334209 seconds
 
  Performance counter stats for './sorting_benchmark_O1 500000 HeapSort':
 
-            59,900      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           626,052      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+         3,280,740      cpu_core/L1-dcache-load-misses/  #    1.34% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       244,550,778      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             7,750      cpu_core/LLC-load-misses/        #   20.25% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            38,275      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.038675941 seconds time elapsed
+       0.058730136 seconds time elapsed
 
-       0.035455000 seconds user
+       0.057242000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 500000, Algorithm: QuickSort
+Quick Sort: 0.0252566 seconds - Sorted successfully
+Total runtime: 0.0273469 seconds
 
  Performance counter stats for './sorting_benchmark_O1 500000 QuickSort':
 
-            70,398      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-         3,793,003      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           316,174      cpu_core/L1-dcache-load-misses/  #    0.16% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       196,710,729      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             3,350      cpu_core/LLC-load-misses/        #   24.01% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            13,951      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.034119419 seconds time elapsed
+       0.057682256 seconds time elapsed
 
-       0.032861000 seconds user
-       0.000000000 seconds sys
+       0.050780000 seconds user
+       0.003906000 seconds sys
 
 
 
 Array Size: 1000000, Algorithm: MergeSort
+Merge Sort: 0.085472 seconds - Sorted successfully
+Total runtime: 0.087216 seconds
 
  Performance counter stats for './sorting_benchmark_O1 1000000 MergeSort':
 
-           212,727      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-         9,988,273      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           496,810      cpu_core/L1-dcache-load-misses/  #    0.14% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       365,910,520      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             5,679      cpu_core/LLC-load-misses/        #   27.11% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            20,949      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.105454407 seconds time elapsed
+       0.121176805 seconds time elapsed
 
-       0.091302000 seconds user
-       0.007939000 seconds sys
+       0.114023000 seconds user
+       0.003931000 seconds sys
 
 
 
 Array Size: 1000000, Algorithm: HeapSort
+Heap Sort: 0.0695405 seconds - Sorted successfully
+Total runtime: 0.0713647 seconds
 
  Performance counter stats for './sorting_benchmark_O1 1000000 HeapSort':
 
-           101,572      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-         2,244,096      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+         8,013,655      cpu_core/L1-dcache-load-misses/  #    2.33% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       343,884,722      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             4,996      cpu_core/LLC-load-misses/        #    1.02% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+           489,341      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.085632703 seconds time elapsed
+       0.101516188 seconds time elapsed
 
-       0.082713000 seconds user
+       0.099168000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 1000000, Algorithm: QuickSort
+Quick Sort: 0.0510183 seconds - Sorted successfully
+Total runtime: 0.0543579 seconds
 
  Performance counter stats for './sorting_benchmark_O1 1000000 QuickSort':
 
-           107,755      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-         7,751,914      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           134,651      cpu_core/L1-dcache-load-misses/  #    0.05% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       245,301,504      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             6,077      cpu_core/LLC-load-misses/        #   38.09% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            15,954      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.070212890 seconds time elapsed
+       0.089039089 seconds time elapsed
 
-       0.064791000 seconds user
-       0.000000000 seconds sys
+       0.083213000 seconds user
+       0.003962000 seconds sys
 
 
 
 Benchmarking with -O2 optimization
 Array Size: 10000, Algorithm: MergeSort
+Merge Sort: 0.000580167 seconds - Sorted successfully
+Total runtime: 0.00220987 seconds
 
  Performance counter stats for './sorting_benchmark_O2 10000 MergeSort':
 
-            13,856      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-            85,884      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            34,589      cpu_core/L1-dcache-load-misses/  #    0.03% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       105,306,102      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             2,652      cpu_core/LLC-load-misses/        #   41.20% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             6,437      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.004578592 seconds time elapsed
+       0.020447079 seconds time elapsed
 
-       0.001567000 seconds user
+       0.019119000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 10000, Algorithm: HeapSort
+Heap Sort: 0.000297934 seconds - Sorted successfully
+Total runtime: 0.00174285 seconds
 
  Performance counter stats for './sorting_benchmark_O2 10000 HeapSort':
 
-            15,639      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-            29,808      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            29,556      cpu_core/L1-dcache-load-misses/  #    0.03% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       104,679,968      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+               936      cpu_core/LLC-load-misses/        #   21.29% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             4,397      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.002827073 seconds time elapsed
+       0.021195013 seconds time elapsed
 
-       0.001112000 seconds user
+       0.019829000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 10000, Algorithm: QuickSort
+Quick Sort: 0.00033159 seconds - Sorted successfully
+Total runtime: 0.00161528 seconds
 
  Performance counter stats for './sorting_benchmark_O2 10000 QuickSort':
 
-            13,629      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-            75,785      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            34,018      cpu_core/L1-dcache-load-misses/  #    0.03% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       104,122,376      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,407      cpu_core/LLC-load-misses/        #   24.03% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             5,855      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.003011383 seconds time elapsed
+       0.022490032 seconds time elapsed
 
-       0.001164000 seconds user
+       0.020221000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 50000, Algorithm: MergeSort
+Merge Sort: 0.00339008 seconds - Sorted successfully
+Total runtime: 0.00485513 seconds
 
  Performance counter stats for './sorting_benchmark_O2 50000 MergeSort':
 
-            16,177      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           409,311      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            41,837      cpu_core/L1-dcache-load-misses/  #    0.04% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       112,456,819      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+               843      cpu_core/LLC-load-misses/        #   13.66% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             6,171      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.006412855 seconds time elapsed
+       0.024572139 seconds time elapsed
 
-       0.004622000 seconds user
+       0.023115000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 50000, Algorithm: HeapSort
+Heap Sort: 0.00187435 seconds - Sorted successfully
+Total runtime: 0.00314851 seconds
 
  Performance counter stats for './sorting_benchmark_O2 50000 HeapSort':
 
-            18,357      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-            95,571      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           126,141      cpu_core/L1-dcache-load-misses/  #    0.11% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       109,751,288      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,945      cpu_core/LLC-load-misses/        #   27.41% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             7,096      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.005960666 seconds time elapsed
+       0.023716391 seconds time elapsed
 
-       0.003450000 seconds user
+       0.022214000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 50000, Algorithm: QuickSort
+Quick Sort: 0.00194193 seconds - Sorted successfully
+Total runtime: 0.00347472 seconds
 
  Performance counter stats for './sorting_benchmark_O2 50000 QuickSort':
 
-            17,332      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           350,286      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            35,806      cpu_core/L1-dcache-load-misses/  #    0.03% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       106,316,090      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,063      cpu_core/LLC-load-misses/        #   17.27% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             6,155      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.004444466 seconds time elapsed
+       0.023692600 seconds time elapsed
 
-       0.003202000 seconds user
-       0.000000000 seconds sys
+       0.018589000 seconds user
+       0.003717000 seconds sys
 
 
 
 Array Size: 100000, Algorithm: MergeSort
+Merge Sort: 0.0070964 seconds - Sorted successfully
+Total runtime: 0.00896834 seconds
 
  Performance counter stats for './sorting_benchmark_O2 100000 MergeSort':
 
-            32,998      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           843,979      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            59,040      cpu_core/L1-dcache-load-misses/  #    0.05% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       121,690,381      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+               974      cpu_core/LLC-load-misses/        #   20.57% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             4,736      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.010415475 seconds time elapsed
+       0.029094314 seconds time elapsed
 
-       0.005915000 seconds user
-       0.002957000 seconds sys
+       0.027610000 seconds user
+       0.000000000 seconds sys
 
 
 
 Array Size: 100000, Algorithm: HeapSort
+Heap Sort: 0.00495258 seconds - Sorted successfully
+Total runtime: 0.00655234 seconds
 
  Performance counter stats for './sorting_benchmark_O2 100000 HeapSort':
 
-            20,257      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           181,629      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           371,551      cpu_core/L1-dcache-load-misses/  #    0.32% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       116,583,015      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             4,022      cpu_core/LLC-load-misses/        #   44.17% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             9,106      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.007961238 seconds time elapsed
+       0.026070885 seconds time elapsed
 
-       0.006749000 seconds user
+       0.024667000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 100000, Algorithm: QuickSort
+Quick Sort: 0.00415608 seconds - Sorted successfully
+Total runtime: 0.0058002 seconds
 
  Performance counter stats for './sorting_benchmark_O2 100000 QuickSort':
 
-            19,635      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           703,401      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            36,146      cpu_core/L1-dcache-load-misses/  #    0.03% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       109,151,877      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,567      cpu_core/LLC-load-misses/        #   34.36% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             4,560      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.008439172 seconds time elapsed
+       0.027252563 seconds time elapsed
 
-       0.005762000 seconds user
+       0.024804000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 500000, Algorithm: MergeSort
+Merge Sort: 0.0381537 seconds - Sorted successfully
+Total runtime: 0.0397321 seconds
 
  Performance counter stats for './sorting_benchmark_O2 500000 MergeSort':
 
-           120,858      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-         4,688,767      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           361,173      cpu_core/L1-dcache-load-misses/  #    0.18% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       197,905,714      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             6,415      cpu_core/LLC-load-misses/        #   33.84% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            18,957      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.046533324 seconds time elapsed
+       0.064127608 seconds time elapsed
 
-       0.045482000 seconds user
+       0.062736000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 500000, Algorithm: HeapSort
+Heap Sort: 0.0312357 seconds - Sorted successfully
+Total runtime: 0.0353857 seconds
 
  Performance counter stats for './sorting_benchmark_O2 500000 HeapSort':
 
-            65,225      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           865,228      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+         3,264,182      cpu_core/L1-dcache-load-misses/  #    1.85% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       176,393,687      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             5,930      cpu_core/LLC-load-misses/        #   10.96% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            54,112      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.040583174 seconds time elapsed
+       0.057692816 seconds time elapsed
 
-       0.038819000 seconds user
+       0.056434000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 500000, Algorithm: QuickSort
+Quick Sort: 0.0234233 seconds - Sorted successfully
+Total runtime: 0.024976 seconds
 
  Performance counter stats for './sorting_benchmark_O2 500000 QuickSort':
 
-            56,781      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-         3,935,764      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            63,428      cpu_core/L1-dcache-load-misses/  #    0.05% of all L1-dcache accesses   (99.85%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       133,276,020      cpu_core/L1-dcache-loads/                                               (99.85%)
+         3,285,360      cpu_atom/L1-dcache-loads/                                               (0.15%)
+             3,051      cpu_core/LLC-load-misses/        #   24.91% of all L1-icache accesses   (99.85%)
+                 0      cpu_atom/LLC-load-misses/                                               (0.15%)
+            12,249      cpu_core/LLC-loads/                                                     (99.85%)
+            46,436      cpu_atom/LLC-loads/                                                     (0.15%)
 
-       0.031530807 seconds time elapsed
+       0.051478325 seconds time elapsed
 
-       0.029280000 seconds user
-       0.000000000 seconds sys
+       0.043221000 seconds user
+       0.003929000 seconds sys
 
 
 
 Array Size: 1000000, Algorithm: MergeSort
+Merge Sort: 0.0794217 seconds - Sorted successfully
+Total runtime: 0.0811418 seconds
 
  Performance counter stats for './sorting_benchmark_O2 1000000 MergeSort':
 
-           200,917      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-         9,815,856      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           535,452      cpu_core/L1-dcache-load-misses/  #    0.18% of all L1-dcache accesses   (99.99%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       295,389,588      cpu_core/L1-dcache-loads/                                               (99.99%)
+        10,657,158      cpu_atom/L1-dcache-loads/                                               (0.01%)
+             8,627      cpu_core/LLC-load-misses/        #   37.10% of all L1-icache accesses   (99.99%)
+                 0      cpu_atom/LLC-load-misses/                                               (0.01%)
+            23,253      cpu_core/LLC-loads/                                                     (99.99%)
+           647,397      cpu_atom/LLC-loads/                                                     (0.01%)
 
-       0.092995291 seconds time elapsed
+       0.109795077 seconds time elapsed
 
-       0.083013000 seconds user
-       0.007906000 seconds sys
+       0.108238000 seconds user
+       0.000000000 seconds sys
 
 
 
 Array Size: 1000000, Algorithm: HeapSort
+Heap Sort: 0.0724865 seconds - Sorted successfully
+Total runtime: 0.0749311 seconds
 
  Performance counter stats for './sorting_benchmark_O2 1000000 HeapSort':
 
-            99,698      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-         1,692,916      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+         7,875,968      cpu_core/L1-dcache-load-misses/  #    3.07% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       256,167,366      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             4,562      cpu_core/LLC-load-misses/        #    0.84% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+           544,291      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.086940022 seconds time elapsed
+       0.105066711 seconds time elapsed
 
-       0.085306000 seconds user
+       0.103799000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 1000000, Algorithm: QuickSort
+Quick Sort: 0.0462803 seconds - Sorted successfully
+Total runtime: 0.0494343 seconds
 
  Performance counter stats for './sorting_benchmark_O2 1000000 QuickSort':
 
-           104,624      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-         8,038,057      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           302,395      cpu_core/L1-dcache-load-misses/  #    0.18% of all L1-dcache accesses   (99.98%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       166,368,443      cpu_core/L1-dcache-loads/                                               (99.98%)
+        20,341,415      cpu_atom/L1-dcache-loads/                                               (0.02%)
+             7,135      cpu_core/LLC-load-misses/        #   34.11% of all L1-icache accesses   (99.98%)
+                 0      cpu_atom/LLC-load-misses/                                               (0.02%)
+            20,915      cpu_core/LLC-loads/                                                     (99.98%)
+           337,552      cpu_atom/LLC-loads/                                                     (0.02%)
 
-       0.058792796 seconds time elapsed
+       0.080787756 seconds time elapsed
 
-       0.056841000 seconds user
+       0.077767000 seconds user
        0.000000000 seconds sys
 
 
 
 Benchmarking with -O3 optimization
 Array Size: 10000, Algorithm: MergeSort
+Merge Sort: 0.00059056 seconds - Sorted successfully
+Total runtime: 0.00183594 seconds
 
  Performance counter stats for './sorting_benchmark_O3 10000 MergeSort':
 
-            18,005      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-            82,209      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            45,038      cpu_core/L1-dcache-load-misses/  #    0.04% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       105,249,197      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             2,302      cpu_core/LLC-load-misses/        #   33.93% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             6,784      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.006800192 seconds time elapsed
+       0.020648602 seconds time elapsed
 
-       0.001506000 seconds user
+       0.019513000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 10000, Algorithm: HeapSort
+Heap Sort: 0.000542737 seconds - Sorted successfully
+Total runtime: 0.00239222 seconds
 
  Performance counter stats for './sorting_benchmark_O3 10000 HeapSort':
 
-            12,214      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-            91,088      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            49,123      cpu_core/L1-dcache-load-misses/  #    0.05% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       104,616,812      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,148      cpu_core/LLC-load-misses/        #   19.94% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             5,757      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.003248744 seconds time elapsed
+       0.021768765 seconds time elapsed
 
-       0.001544000 seconds user
+       0.019889000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 10000, Algorithm: QuickSort
+Quick Sort: 0.000314171 seconds - Sorted successfully
+Total runtime: 0.002223 seconds
 
  Performance counter stats for './sorting_benchmark_O3 10000 QuickSort':
 
-            14,362      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-            75,063      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            34,739      cpu_core/L1-dcache-load-misses/  #    0.03% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       104,112,640      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,606      cpu_core/LLC-load-misses/        #   25.94% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             6,191      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.002295530 seconds time elapsed
+       0.020659880 seconds time elapsed
 
-       0.001257000 seconds user
+       0.019286000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 50000, Algorithm: MergeSort
+Merge Sort: 0.00323121 seconds - Sorted successfully
+Total runtime: 0.00423077 seconds
 
  Performance counter stats for './sorting_benchmark_O3 50000 MergeSort':
 
-            68,010      cpu_core/cache-misses/                                                  (22.11%)
-            44,450      cpu_atom/cache-misses/                                                  (77.89%)
-           624,920      cpu_core/branch-misses/                                                 (22.11%)
-           350,191      cpu_atom/branch-misses/                                                 (77.89%)
+            55,128      cpu_core/L1-dcache-load-misses/  #    0.05% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       112,109,798      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,334      cpu_core/LLC-load-misses/        #   22.81% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             5,848      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.009575220 seconds time elapsed
+       0.023870732 seconds time elapsed
 
-       0.006435000 seconds user
+       0.022791000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 50000, Algorithm: HeapSort
+Heap Sort: 0.00310753 seconds - Sorted successfully
+Total runtime: 0.00624488 seconds
 
  Performance counter stats for './sorting_benchmark_O3 50000 HeapSort':
 
-            17,162      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           438,018      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           144,003      cpu_core/L1-dcache-load-misses/  #    0.13% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       109,194,833      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,310      cpu_core/LLC-load-misses/        #   21.78% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             6,014      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.005759412 seconds time elapsed
+       0.025353103 seconds time elapsed
 
-       0.004529000 seconds user
+       0.022983000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 50000, Algorithm: QuickSort
+Quick Sort: 0.00185721 seconds - Sorted successfully
+Total runtime: 0.00302322 seconds
 
  Performance counter stats for './sorting_benchmark_O3 50000 QuickSort':
 
-            16,605      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           338,407      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            43,027      cpu_core/L1-dcache-load-misses/  #    0.04% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       106,269,609      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,510      cpu_core/LLC-load-misses/        #   27.32% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             5,527      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.004688205 seconds time elapsed
+       0.023158982 seconds time elapsed
 
-       0.003095000 seconds user
+       0.021498000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 100000, Algorithm: MergeSort
+Merge Sort: 0.00701478 seconds - Sorted successfully
+Total runtime: 0.00841792 seconds
 
  Performance counter stats for './sorting_benchmark_O3 100000 MergeSort':
 
-            34,326      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           826,175      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            88,552      cpu_core/L1-dcache-load-misses/  #    0.07% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       120,734,514      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,437      cpu_core/LLC-load-misses/        #   19.19% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             7,489      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.012063943 seconds time elapsed
+       0.027861329 seconds time elapsed
 
-       0.006096000 seconds user
-       0.003048000 seconds sys
+       0.026433000 seconds user
+       0.000000000 seconds sys
 
 
 
 Array Size: 100000, Algorithm: HeapSort
+Heap Sort: 0.00684027 seconds - Sorted successfully
+Total runtime: 0.00860453 seconds
 
  Performance counter stats for './sorting_benchmark_O3 100000 HeapSort':
 
-            17,960      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           908,515      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           420,562      cpu_core/L1-dcache-load-misses/  #    0.36% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       115,327,631      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             1,249      cpu_core/LLC-load-misses/        #   20.32% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             6,148      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.012134395 seconds time elapsed
+       0.030585560 seconds time elapsed
 
-       0.008795000 seconds user
+       0.027142000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 100000, Algorithm: QuickSort
+Quick Sort: 0.00383901 seconds - Sorted successfully
+Total runtime: 0.0055292 seconds
 
  Performance counter stats for './sorting_benchmark_O3 100000 QuickSort':
 
-            18,343      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-           688,415      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+            48,519      cpu_core/L1-dcache-load-misses/  #    0.04% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       109,025,495      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             2,270      cpu_core/LLC-load-misses/        #   31.29% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+             7,254      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.007073422 seconds time elapsed
+       0.026230246 seconds time elapsed
 
-       0.002906000 seconds user
-       0.002906000 seconds sys
+       0.023900000 seconds user
+       0.000000000 seconds sys
 
 
 
 Array Size: 500000, Algorithm: MergeSort
+Merge Sort: 0.0377372 seconds - Sorted successfully
+Total runtime: 0.0394004 seconds
 
  Performance counter stats for './sorting_benchmark_O3 500000 MergeSort':
 
-           108,098      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-         4,602,422      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           365,825      cpu_core/L1-dcache-load-misses/  #    0.19% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       192,884,836      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             6,308      cpu_core/LLC-load-misses/        #   27.41% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            23,015      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.045744564 seconds time elapsed
+       0.064276455 seconds time elapsed
 
-       0.039909000 seconds user
-       0.003990000 seconds sys
+       0.062714000 seconds user
+       0.000000000 seconds sys
 
 
 
 Array Size: 500000, Algorithm: HeapSort
+Heap Sort: 0.0393372 seconds - Sorted successfully
+Total runtime: 0.0410891 seconds
 
  Performance counter stats for './sorting_benchmark_O3 500000 HeapSort':
 
-            56,511      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-         5,049,059      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+         3,534,484      cpu_core/L1-dcache-load-misses/  #    2.03% of all L1-dcache accesses   (95.39%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       174,033,959      cpu_core/L1-dcache-loads/                                               (95.39%)
+        63,519,435      cpu_atom/L1-dcache-loads/                                               (4.61%)
+             4,268      cpu_core/LLC-load-misses/        #    9.39% of all L1-icache accesses   (95.39%)
+                 0      cpu_atom/LLC-load-misses/                                               (4.61%)
+            45,457      cpu_core/LLC-loads/                                                     (95.39%)
+           557,600      cpu_atom/LLC-loads/                                                     (4.61%)
 
-       0.047513271 seconds time elapsed
+       0.068211827 seconds time elapsed
 
-       0.045229000 seconds user
+       0.066098000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 500000, Algorithm: QuickSort
+Quick Sort: 0.0216522 seconds - Sorted successfully
+Total runtime: 0.023627 seconds
 
  Performance counter stats for './sorting_benchmark_O3 500000 QuickSort':
 
-            60,285      cpu_core/cache-misses/                                                  (93.17%)
-             2,165      cpu_atom/cache-misses/                                                  (6.83%)
-         3,870,529      cpu_core/branch-misses/                                                 (93.17%)
-         3,690,349      cpu_atom/branch-misses/                                                 (6.83%)
+           403,459      cpu_core/L1-dcache-load-misses/  #    0.30% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       132,309,630      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             2,455      cpu_core/LLC-load-misses/        #   18.21% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            13,479      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.031669995 seconds time elapsed
+       0.046819813 seconds time elapsed
 
-       0.024147000 seconds user
-       0.004024000 seconds sys
+       0.044619000 seconds user
+       0.000000000 seconds sys
 
 
 
 Array Size: 1000000, Algorithm: MergeSort
+Merge Sort: 0.077003 seconds - Sorted successfully
+Total runtime: 0.0788829 seconds
 
  Performance counter stats for './sorting_benchmark_O3 1000000 MergeSort':
 
-           198,497      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-         9,653,128      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           755,052      cpu_core/L1-dcache-load-misses/  #    0.27% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       283,856,975      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             4,218      cpu_core/LLC-load-misses/        #    9.45% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+            44,656      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.091764547 seconds time elapsed
+       0.107821865 seconds time elapsed
 
-       0.089580000 seconds user
+       0.106162000 seconds user
        0.000000000 seconds sys
 
 
 
 Array Size: 1000000, Algorithm: HeapSort
+Heap Sort: 0.0828939 seconds - Sorted successfully
+Total runtime: 0.084801 seconds
 
  Performance counter stats for './sorting_benchmark_O3 1000000 HeapSort':
 
-           107,704      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-        10,586,365      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+         8,657,678      cpu_core/L1-dcache-load-misses/  #    3.60% of all L1-dcache accesses 
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       240,178,757      cpu_core/L1-dcache-loads/                                             
+     <not counted>      cpu_atom/L1-dcache-loads/                                               (0.00%)
+             5,802      cpu_core/LLC-load-misses/        #    0.96% of all L1-icache accesses 
+     <not counted>      cpu_atom/LLC-load-misses/                                               (0.00%)
+           606,771      cpu_core/LLC-loads/                                                   
+     <not counted>      cpu_atom/LLC-loads/                                                     (0.00%)
 
-       0.096966259 seconds time elapsed
+       0.117179891 seconds time elapsed
 
-       0.090683000 seconds user
-       0.003942000 seconds sys
+       0.115830000 seconds user
+       0.000000000 seconds sys
 
 
 
 Array Size: 1000000, Algorithm: QuickSort
+Quick Sort: 0.0438163 seconds - Sorted successfully
+Total runtime: 0.0458159 seconds
 
  Performance counter stats for './sorting_benchmark_O3 1000000 QuickSort':
 
-           100,472      cpu_core/cache-misses/                                                
-     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
-         7,861,226      cpu_core/branch-misses/                                               
-     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           466,331      cpu_core/L1-dcache-load-misses/  #    0.28% of all L1-dcache accesses   (97.68%)
+   <not supported>      cpu_atom/L1-dcache-load-misses/                                       
+       167,604,761      cpu_core/L1-dcache-loads/                                               (97.68%)
+        49,949,855      cpu_atom/L1-dcache-loads/                                               (2.32%)
+             3,798      cpu_core/LLC-load-misses/        #   19.98% of all L1-icache accesses   (97.68%)
+                 0      cpu_atom/LLC-load-misses/                                               (2.32%)
+            19,010      cpu_core/LLC-loads/                                                     (97.68%)
+            12,266      cpu_atom/LLC-loads/                                                     (2.32%)
 
-       0.061658013 seconds time elapsed
+       0.077463757 seconds time elapsed
 
-       0.051750000 seconds user
-       0.003980000 seconds sys
+       0.075598000 seconds user
+       0.000000000 seconds sys
 
 
 
