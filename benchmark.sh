@@ -4,6 +4,7 @@ COMPILER_FLAGS=("O0" "O1" "O2" "O3")
 ARRAY_SIZES=(10000 50000 100000 500000 1000000)
 SORTING_ALGORITHMS=("MergeSort" "HeapSort" "QuickSort")
 RESULTS_FILE="benchmark_results.txt"
+CPU_CORE="0"  # Specify the CPU core to bind the task
 
 # Clear the results file
 echo "Benchmarking Results" > $RESULTS_FILE
@@ -19,7 +20,7 @@ do
         for SORT in "${SORTING_ALGORITHMS[@]}"
         do
             echo "Array Size: $SIZE, Algorithm: $SORT" | tee -a $RESULTS_FILE
-            perf stat -e cache-misses,branch-misses ./sorting_benchmark_$FLAG $SIZE $SORT 2>> $RESULTS_FILE
+            taskset -c $CPU_CORE perf stat -e cache-misses,branch-misses ./sorting_benchmark_$FLAG $SIZE $SORT 2>> $RESULTS_FILE
             echo "" >> $RESULTS_FILE
         done
     done
