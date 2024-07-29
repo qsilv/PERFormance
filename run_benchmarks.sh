@@ -12,7 +12,7 @@ run_benchmarks() {
     optimization_level=$1
     sort_name=$2
     echo "Running benchmarks with $sort_name and optimization level -$optimization_level"
-    sudo perf stat -e branch-misses,cache-misses -x, -o perf_output_${sort_name}_$optimization_level.txt ./benchmark_$optimization_level $sort_name $optimization_level
+    perf stat -e branch-misses,cache-misses -x, -o perf_output_${sort_name}_$optimization_level.txt ./benchmark_$optimization_level $sort_name $optimization_level
     echo "Perf output saved to perf_output_${sort_name}_$optimization_level.txt"
 }
 
