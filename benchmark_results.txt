@@ -1,0 +1,966 @@
+Benchmarking Results
+====================
+Benchmarking with -O0 optimization
+Array Size: 10000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O0 10000 MergeSort':
+
+            27,528      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+            89,390      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.008519882 seconds time elapsed
+
+       0.003678000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 10000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O0 10000 HeapSort':
+
+            20,773      cpu_core/cache-misses/                                                  (98.87%)
+             2,913      cpu_atom/cache-misses/                                                  (1.13%)
+            94,075      cpu_core/branch-misses/                                                 (98.87%)
+            53,323      cpu_atom/branch-misses/                                                 (1.13%)
+
+       0.004396337 seconds time elapsed
+
+       0.003051000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 10000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O0 10000 QuickSort':
+
+            15,258      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+            73,323      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.006375484 seconds time elapsed
+
+       0.002034000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 50000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O0 50000 MergeSort':
+
+            26,221      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           415,673      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.022166378 seconds time elapsed
+
+       0.014664000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 50000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O0 50000 HeapSort':
+
+            18,305      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           438,780      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.013231655 seconds time elapsed
+
+       0.011818000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 50000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O0 50000 QuickSort':
+
+            20,018      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           342,885      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.008799016 seconds time elapsed
+
+       0.007239000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 100000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O0 100000 MergeSort':
+
+            34,351      cpu_core/cache-misses/                                                  (99.97%)
+           652,921      cpu_atom/cache-misses/                                                  (0.03%)
+           864,119      cpu_core/branch-misses/                                                 (99.97%)
+           256,504      cpu_atom/branch-misses/                                                 (0.03%)
+
+       0.032196147 seconds time elapsed
+
+       0.029835000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 100000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O0 100000 HeapSort':
+
+            34,598      cpu_core/cache-misses/                                                  (73.70%)
+               326      cpu_atom/cache-misses/                                                  (26.30%)
+           995,636      cpu_core/branch-misses/                                                 (73.70%)
+           732,076      cpu_atom/branch-misses/                                                 (26.30%)
+
+       0.029671063 seconds time elapsed
+
+       0.027816000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 100000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O0 100000 QuickSort':
+
+            25,415      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           691,533      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.018253423 seconds time elapsed
+
+       0.015065000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 500000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O0 500000 MergeSort':
+
+           117,446      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+         4,925,735      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.153856849 seconds time elapsed
+
+       0.143509000 seconds user
+       0.007972000 seconds sys
+
+
+
+Array Size: 500000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O0 500000 HeapSort':
+
+            66,900      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+         5,358,313      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.138514584 seconds time elapsed
+
+       0.136478000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 500000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O0 500000 QuickSort':
+
+            73,735      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+         3,843,472      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.075635528 seconds time elapsed
+
+       0.073983000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 1000000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O0 1000000 MergeSort':
+
+           316,110      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+        10,253,809      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.318252239 seconds time elapsed
+
+       0.316652000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 1000000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O0 1000000 HeapSort':
+
+           131,804      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+        13,970,566      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.317375506 seconds time elapsed
+
+       0.314299000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 1000000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O0 1000000 QuickSort':
+
+           151,082      cpu_core/cache-misses/                                                  (96.73%)
+           220,458      cpu_atom/cache-misses/                                                  (3.27%)
+         7,953,117      cpu_core/branch-misses/                                                 (96.73%)
+         3,496,360      cpu_atom/branch-misses/                                                 (3.27%)
+
+       0.157499422 seconds time elapsed
+
+       0.151830000 seconds user
+       0.003995000 seconds sys
+
+
+
+Benchmarking with -O1 optimization
+Array Size: 10000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O1 10000 MergeSort':
+
+            18,245      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+            86,884      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.002938913 seconds time elapsed
+
+       0.001749000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 10000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O1 10000 HeapSort':
+
+            14,723      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+            30,240      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.002421423 seconds time elapsed
+
+       0.001161000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 10000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O1 10000 QuickSort':
+
+            12,016      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+            75,201      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.003398800 seconds time elapsed
+
+       0.001341000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 50000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O1 50000 MergeSort':
+
+            24,830      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           405,613      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.010548944 seconds time elapsed
+
+       0.005195000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 50000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O1 50000 HeapSort':
+
+            17,721      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+            79,030      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.006138260 seconds time elapsed
+
+       0.003275000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 50000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O1 50000 QuickSort':
+
+            15,951      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           338,077      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.005525222 seconds time elapsed
+
+       0.003447000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 100000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O1 100000 MergeSort':
+
+            28,489      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           841,952      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.016985164 seconds time elapsed
+
+       0.009386000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 100000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O1 100000 HeapSort':
+
+            18,153      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           139,261      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.007808529 seconds time elapsed
+
+       0.006327000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 100000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O1 100000 QuickSort':
+
+            17,796      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           682,333      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.008813284 seconds time elapsed
+
+       0.004301000 seconds user
+       0.002150000 seconds sys
+
+
+
+Array Size: 500000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O1 500000 MergeSort':
+
+           135,416      cpu_core/cache-misses/                                                  (95.27%)
+            62,022      cpu_atom/cache-misses/                                                  (4.73%)
+         4,792,007      cpu_core/branch-misses/                                                 (95.27%)
+         4,103,493      cpu_atom/branch-misses/                                                 (4.73%)
+
+       0.054037621 seconds time elapsed
+
+       0.045560000 seconds user
+       0.004141000 seconds sys
+
+
+
+Array Size: 500000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O1 500000 HeapSort':
+
+            59,900      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           626,052      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.038675941 seconds time elapsed
+
+       0.035455000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 500000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O1 500000 QuickSort':
+
+            70,398      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+         3,793,003      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.034119419 seconds time elapsed
+
+       0.032861000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 1000000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O1 1000000 MergeSort':
+
+           212,727      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+         9,988,273      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.105454407 seconds time elapsed
+
+       0.091302000 seconds user
+       0.007939000 seconds sys
+
+
+
+Array Size: 1000000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O1 1000000 HeapSort':
+
+           101,572      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+         2,244,096      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.085632703 seconds time elapsed
+
+       0.082713000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 1000000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O1 1000000 QuickSort':
+
+           107,755      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+         7,751,914      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.070212890 seconds time elapsed
+
+       0.064791000 seconds user
+       0.000000000 seconds sys
+
+
+
+Benchmarking with -O2 optimization
+Array Size: 10000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O2 10000 MergeSort':
+
+            13,856      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+            85,884      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.004578592 seconds time elapsed
+
+       0.001567000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 10000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O2 10000 HeapSort':
+
+            15,639      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+            29,808      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.002827073 seconds time elapsed
+
+       0.001112000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 10000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O2 10000 QuickSort':
+
+            13,629      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+            75,785      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.003011383 seconds time elapsed
+
+       0.001164000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 50000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O2 50000 MergeSort':
+
+            16,177      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           409,311      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.006412855 seconds time elapsed
+
+       0.004622000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 50000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O2 50000 HeapSort':
+
+            18,357      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+            95,571      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.005960666 seconds time elapsed
+
+       0.003450000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 50000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O2 50000 QuickSort':
+
+            17,332      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           350,286      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.004444466 seconds time elapsed
+
+       0.003202000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 100000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O2 100000 MergeSort':
+
+            32,998      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           843,979      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.010415475 seconds time elapsed
+
+       0.005915000 seconds user
+       0.002957000 seconds sys
+
+
+
+Array Size: 100000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O2 100000 HeapSort':
+
+            20,257      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           181,629      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.007961238 seconds time elapsed
+
+       0.006749000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 100000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O2 100000 QuickSort':
+
+            19,635      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           703,401      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.008439172 seconds time elapsed
+
+       0.005762000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 500000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O2 500000 MergeSort':
+
+           120,858      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+         4,688,767      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.046533324 seconds time elapsed
+
+       0.045482000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 500000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O2 500000 HeapSort':
+
+            65,225      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           865,228      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.040583174 seconds time elapsed
+
+       0.038819000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 500000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O2 500000 QuickSort':
+
+            56,781      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+         3,935,764      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.031530807 seconds time elapsed
+
+       0.029280000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 1000000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O2 1000000 MergeSort':
+
+           200,917      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+         9,815,856      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.092995291 seconds time elapsed
+
+       0.083013000 seconds user
+       0.007906000 seconds sys
+
+
+
+Array Size: 1000000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O2 1000000 HeapSort':
+
+            99,698      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+         1,692,916      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.086940022 seconds time elapsed
+
+       0.085306000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 1000000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O2 1000000 QuickSort':
+
+           104,624      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+         8,038,057      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.058792796 seconds time elapsed
+
+       0.056841000 seconds user
+       0.000000000 seconds sys
+
+
+
+Benchmarking with -O3 optimization
+Array Size: 10000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O3 10000 MergeSort':
+
+            18,005      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+            82,209      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.006800192 seconds time elapsed
+
+       0.001506000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 10000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O3 10000 HeapSort':
+
+            12,214      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+            91,088      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.003248744 seconds time elapsed
+
+       0.001544000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 10000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O3 10000 QuickSort':
+
+            14,362      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+            75,063      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.002295530 seconds time elapsed
+
+       0.001257000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 50000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O3 50000 MergeSort':
+
+            68,010      cpu_core/cache-misses/                                                  (22.11%)
+            44,450      cpu_atom/cache-misses/                                                  (77.89%)
+           624,920      cpu_core/branch-misses/                                                 (22.11%)
+           350,191      cpu_atom/branch-misses/                                                 (77.89%)
+
+       0.009575220 seconds time elapsed
+
+       0.006435000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 50000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O3 50000 HeapSort':
+
+            17,162      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           438,018      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.005759412 seconds time elapsed
+
+       0.004529000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 50000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O3 50000 QuickSort':
+
+            16,605      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           338,407      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.004688205 seconds time elapsed
+
+       0.003095000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 100000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O3 100000 MergeSort':
+
+            34,326      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           826,175      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.012063943 seconds time elapsed
+
+       0.006096000 seconds user
+       0.003048000 seconds sys
+
+
+
+Array Size: 100000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O3 100000 HeapSort':
+
+            17,960      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           908,515      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.012134395 seconds time elapsed
+
+       0.008795000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 100000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O3 100000 QuickSort':
+
+            18,343      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+           688,415      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.007073422 seconds time elapsed
+
+       0.002906000 seconds user
+       0.002906000 seconds sys
+
+
+
+Array Size: 500000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O3 500000 MergeSort':
+
+           108,098      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+         4,602,422      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.045744564 seconds time elapsed
+
+       0.039909000 seconds user
+       0.003990000 seconds sys
+
+
+
+Array Size: 500000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O3 500000 HeapSort':
+
+            56,511      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+         5,049,059      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.047513271 seconds time elapsed
+
+       0.045229000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 500000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O3 500000 QuickSort':
+
+            60,285      cpu_core/cache-misses/                                                  (93.17%)
+             2,165      cpu_atom/cache-misses/                                                  (6.83%)
+         3,870,529      cpu_core/branch-misses/                                                 (93.17%)
+         3,690,349      cpu_atom/branch-misses/                                                 (6.83%)
+
+       0.031669995 seconds time elapsed
+
+       0.024147000 seconds user
+       0.004024000 seconds sys
+
+
+
+Array Size: 1000000, Algorithm: MergeSort
+
+ Performance counter stats for './sorting_benchmark_O3 1000000 MergeSort':
+
+           198,497      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+         9,653,128      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.091764547 seconds time elapsed
+
+       0.089580000 seconds user
+       0.000000000 seconds sys
+
+
+
+Array Size: 1000000, Algorithm: HeapSort
+
+ Performance counter stats for './sorting_benchmark_O3 1000000 HeapSort':
+
+           107,704      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+        10,586,365      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.096966259 seconds time elapsed
+
+       0.090683000 seconds user
+       0.003942000 seconds sys
+
+
+
+Array Size: 1000000, Algorithm: QuickSort
+
+ Performance counter stats for './sorting_benchmark_O3 1000000 QuickSort':
+
+           100,472      cpu_core/cache-misses/                                                
+     <not counted>      cpu_atom/cache-misses/                                                  (0.00%)
+         7,861,226      cpu_core/branch-misses/                                               
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+
+       0.061658013 seconds time elapsed
+
+       0.051750000 seconds user
+       0.003980000 seconds sys
+
+
+
