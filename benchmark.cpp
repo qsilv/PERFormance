@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <chrono>
+#include <string>
 #include "data_generator.h"
 #include "quicksort.h"
 #include "heapsort.h"
@@ -41,4 +42,18 @@ void benchmark(const string& optimizationLevel, const string& sortName) {
             benchmarkSort(mergesort, "Merge Sort", randomArray, optimizationLevel);
         }
     }
+}
+
+int main(int argc, char* argv[]) {
+    if (argc != 3) {
+        cerr << "Usage: " << argv[0] << " <sort_name> <optimization_level>" << endl;
+        return 1;
+    }
+
+    string sortName = argv[1];
+    string optimizationLevel = argv[2];
+
+    benchmark(optimizationLevel, sortName);
+
+    return 0;
 }
