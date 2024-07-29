@@ -143,6 +143,14 @@ void heapSortWrapper(std::vector<int>& data, int, int) {
     heapSort(data);
 }
 
+void warmup() {
+    std::vector<int> data(10000);
+    std::generate(data.begin(), data.end(), std::rand);
+    heapSort(data);
+    quickSort(data, 0, data.size() - 1);
+    mergeSort(data, 0, data.size() - 1);
+}
+
 int main(int argc, char* argv[]) {
     if (argc != 3) {
         std::cerr << "Usage: " << argv[0] << " <array size> <sort algorithm>" << std::endl;
@@ -154,6 +162,10 @@ int main(int argc, char* argv[]) {
     std::vector<int> data(size);
     std::generate(data.begin(), data.end(), std::rand);
 
+    warmup();  // Adding warm-up phase
+
+    auto start = std::chrono::high_resolution_clock::now();
+
     if (algorithm == "MergeSort") {
         measure_sort(mergeSort, data, "Merge Sort");
     } else if (algorithm == "HeapSort") {
@@ -164,6 +176,11 @@ int main(int argc, char* argv[]) {
         std::cerr << "Unknown sorting algorithm: " << algorithm << std::endl;
         return 1;
     }
+
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> duration = end - start;
+
+    std::cout << "Total runtime: " << duration.count() << " seconds" << std::endl;
 
     return 0;
 }
