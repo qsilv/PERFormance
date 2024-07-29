@@ -17,9 +17,10 @@ run_benchmarks() {
     ./benchmark_$optimization_level $sort_name $optimization_level $output_file
 
     # Use perf to gather statistics and append to the output file
-    perf stat -e branch-misses,cache-misses -x, -o temp_perf_output.txt ./benchmark_$optimization_level $sort_name $optimization_level $output_file
     echo "Perf output for $sort_name with $optimization_level optimization:" >> $output_file
-    cat temp_perf_output.txt >> $output_file
+    perf stat -e branch-misses,cache-misses -x, -o temp_perf_output.txt ./benchmark_$optimization_level $sort_name $optimization_level
+    echo "Branch Misses, Cache Misses" >> $output_file
+    cat temp_perf_output.txt | grep -E "branch-misses|cache-misses" | awk -F, '{print $1", "$4}' >> $output_file
     echo "" >> $output_file
 
     rm temp_perf_output.txt
@@ -32,7 +33,7 @@ main() {
     output_file="benchmark_results.txt"
 
     # Clear the output file
-    echo "Sort Algorithm, Array Size, Optimization Level, Runtime" > $output_file
+    echo "Sort Algorithm, Array Size, Optimization Level, Runtime, Branch Misses, Cache Misses" > $output_file
 
     # Compile with each optimization level
     for opt_level in "${optimization_levels[@]}"; do
