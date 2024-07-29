@@ -21,9 +21,17 @@ do
         do
             echo "Array Size: $SIZE, Algorithm: $SORT" | tee -a $RESULTS_FILE
             echo "Running on P-cores: $P_CORES" | tee -a $RESULTS_FILE
+            
+            # Run the benchmark and capture runtime
             taskset -c $P_CORES ./sorting_benchmark_$FLAG $SIZE $SORT > temp_output.txt
             cat temp_output.txt >> $RESULTS_FILE
-            taskset -c $P_CORES perf stat -e cache-misses,branch-misses ./sorting_benchmark_$FLAG $SIZE $SORT 2>> $RESULTS_FILE
+
+            # Collect performance statistics
+            taskset -c $P_CORES perf stat -e L1-dcache-load-misses,L1-dcache-loads,LLC-load-misses,LLC-loads ./sorting_benchmark_$FLAG $SIZE $SORT 2>> $RESULTS_FILE
+            
+            # Record detailed performance data for analysis
+            taskset -c $P_CORES perf record -e L1-dcache-load-misses:pp,L1-dcache-loads:pp,LLC-load-misses:pp,LLC-loads:pp ./sorting_benchmark_$FLAG $SIZE $SORT
+
             echo "" >> $RESULTS_FILE
         done
     done
