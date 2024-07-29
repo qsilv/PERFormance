@@ -5,7 +5,7 @@
 using namespace std;
 
 void runPerf(const string& sortName, const string& optimizationLevel) {
-    string command = "sudo perf stat -e branch-misses,cache-misses -x, -o perf_output_" + sortName + "_" + optimizationLevel + ".txt ./benchmark_" + sortName + "_" + optimizationLevel;
+    string command = "perf stat -e branch-misses,cache-misses -x, -o perf_output_" + sortName + "_" + optimizationLevel + ".txt ./benchmark_" + sortName + "_" + optimizationLevel;
     
     cout << "Running with " << sortName << " and " << optimizationLevel << " optimization:" << endl;
     system(command.c_str());
