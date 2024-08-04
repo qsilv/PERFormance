@@ -100,6 +100,46 @@ void quickSort(std::vector<int>& arr, int low, int high) {
     }
 }
 
+// Bubble Sort
+void bubbleSort(std::vector<int>& arr) {
+    int n = arr.size();
+    for (int i = 0; i < n - 1; ++i) {
+        for (int j = 0; j < n - i - 1; ++j) {
+            if (arr[j] > arr[j + 1]) {
+                std::swap(arr[j], arr[j + 1]);
+            }
+        }
+    }
+}
+
+// Insertion Sort
+void insertionSort(std::vector<int>& arr) {
+    int n = arr.size();
+    for (int i = 1; i < n; ++i) {
+        int key = arr[i];
+        int j = i - 1;
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            --j;
+        }
+        arr[j + 1] = key;
+    }
+}
+
+// Selection Sort
+void selectionSort(std::vector<int>& arr) {
+    int n = arr.size();
+    for (int i = 0; i < n - 1; ++i) {
+        int min_idx = i;
+        for (int j = i + 1; j < n; ++j) {
+            if (arr[j] < arr[min_idx]) {
+                min_idx = j;
+            }
+        }
+        std::swap(arr[min_idx], arr[i]);
+    }
+}
+
 // Function to check if array is sorted
 bool isSorted(const std::vector<int>& arr) {
     for (size_t i = 1; i < arr.size(); ++i) {
@@ -143,12 +183,30 @@ void heapSortWrapper(std::vector<int>& data, int, int) {
     heapSort(data);
 }
 
+// Bubble Sort Wrapper
+void bubbleSortWrapper(std::vector<int>& data, int, int) {
+    bubbleSort(data);
+}
+
+// Insertion Sort Wrapper
+void insertionSortWrapper(std::vector<int>& data, int, int) {
+    insertionSort(data);
+}
+
+// Selection Sort Wrapper
+void selectionSortWrapper(std::vector<int>& data, int, int) {
+    selectionSort(data);
+}
+
 void warmup() {
     std::vector<int> data(10000);
     std::generate(data.begin(), data.end(), std::rand);
     heapSort(data);
     quickSort(data, 0, data.size() - 1);
     mergeSort(data, 0, data.size() - 1);
+    bubbleSort(data);
+    insertionSort(data);
+    selectionSort(data);
 }
 
 int main(int argc, char* argv[]) {
@@ -172,6 +230,12 @@ int main(int argc, char* argv[]) {
         measure_sort(heapSortWrapper, data, "Heap Sort");
     } else if (algorithm == "QuickSort") {
         measure_sort([](std::vector<int>& arr, int low, int high) { quickSort(arr, low, high); }, data, "Quick Sort");
+    } else if (algorithm == "BubbleSort") {
+        measure_sort(bubbleSortWrapper, data, "Bubble Sort");
+    } else if (algorithm == "InsertionSort") {
+        measure_sort(insertionSortWrapper, data, "Insertion Sort");
+    } else if (algorithm == "SelectionSort") {
+        measure_sort(selectionSortWrapper, data, "Selection Sort");
     } else {
         std::cerr << "Unknown sorting algorithm: " << algorithm << std::endl;
         return 1;
